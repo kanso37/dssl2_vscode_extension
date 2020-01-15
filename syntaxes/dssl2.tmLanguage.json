@@ -12,10 +12,10 @@
 			"include": "#strings"
 		},
 		{
-			"include": "#variables"
+			"include": "#constants"
 		},
 		{
-			"include": "#constants"
+			"include": "#variables"
 		}
 	],
 	"repository": {
@@ -27,7 +27,7 @@
 				},
 				{
 				"name": "keyword.other.dssl2",
-				"match": "\\b(?i)(self)\\b"
+				"match": "\\b(?i)(placeholder)\\b"
 				}
 			]
 			},
@@ -55,31 +55,34 @@
 				}
 			]
 		},
-		"variables":{
-			"patterns": [
-				{
-				"name": "variable.language.dssl2"	,
-				"match": "\\b(?i)(let)\\b"
-				}
-			]
-		},
 		"constants": {
 			"patterns": [
 				{
 				"name": "constant.character",
-				"match": "(<|>|=|~)"
+				"match": "(<|>|!=|=|==|-)"
 				},
 				{
 				"name": "constant.language",
-				"match": "\\b(?i)(and|or|pass|if|elif|else)\\b"
+				"match": "\\b(?i)(orange)\\b"
 				},
 				{
 				"name": "constant.numeric",
 				"match": "(?x)\n  (?<![\\w\\.])(?:\n      [1-9](?: _?[0-9] )*\n      |\n      0+\n      |\n      [0-9](?: _?[0-9] )* ([jJ])\n      |\n      0 ([0-9]+)(?![eE\\.])\n  )\\b\n"
 				}
 			]
+		},
+		"variables":{
+			"patterns": [
+				{
+				"name": "variable.language.dssl2"	,
+				"match": "\\b(?i)(let|and|or|pass|if|elif|else)\\b"
+				},
+				{
+				"name": "variable.userdefined.dssl2",
+				"match": "[^,.():;<>=!]"
+				}
+			]
 		}
-
 	},
 	"scopeName": "source.rkt"
 }
