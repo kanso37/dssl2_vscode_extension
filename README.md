@@ -9,7 +9,7 @@ Or just open command palette and >Reload Window
 
 Note to self: See Racket/dssl2 setup doc for resources I used to make this extension.
 
-# Just keeping this here in case:
+Just keeping the default text here in case:
 
 # dssl2-vscode-extension README
 
