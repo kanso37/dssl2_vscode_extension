@@ -1,3 +1,16 @@
+### HOW TO USE
+
+Simply clone this project into a folder called "dssl2_vscode_extension"
+and then put that folder in ~/.vscode/extensions
+
+Quit VS Code and reopen it. .rkt files should now have syntax highlighting!
+
+Or just open command palette and >Reload Window
+
+Note to self: See Racket/dssl2 setup doc for resources I used to make this extension.
+
+## Just keeping this here in case:
+
 # dssl2-vscode-extension README
 
 This is the README for your extension "dssl2-vscode-extension". After writing up a brief description, we recommend including the following sections.

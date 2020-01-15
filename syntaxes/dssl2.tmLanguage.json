@@ -6,27 +6,80 @@
 			"include": "#keywords"
 		},
 		{
+			"include": "#comments"
+		},
+		{
 			"include": "#strings"
+		},
+		{
+			"include": "#variables"
+		},
+		{
+			"include": "#constants"
 		}
 	],
 	"repository": {
 		"keywords": {
-			"patterns": [{
-				"name": "keyword.control.dssl2",
-				"match": "\\b(if|while|for|return)\\b"
-			}]
-		},
-		"strings": {
-			"name": "string.quoted.double.dssl2",
-			"begin": "\"",
-			"end": "\"",
 			"patterns": [
 				{
-					"name": "constant.character.escape.dssl2",
-					"match": "\\\\."
+				"name": "keyword.control.dssl2",
+				"match": "\\b(?i)(def|class|assert|test|assert_error)\\b"
+				},
+				{
+				"name": "keyword.other.dssl2",
+				"match": "\\b(?i)(self)\\b"
+				}
+			]
+			},
+		"comments": {
+			"patterns": [
+				{
+				"name": "comment.line.octothorp.dssl2",
+				"begin": "#",
+				"end": "\n"
+
+				}
+			]
+		},
+		"strings":{
+			"patterns": [
+				{
+				"name":"string.quoted.single.dssl2",
+				"begin": "'",
+				"end": "'"
+				},
+				{
+				"name":"string.quoted.double.dssl2",
+				"begin": "\"",
+				"end": "\""
+				}
+			]
+		},
+		"variables":{
+			"patterns": [
+				{
+				"name": "variable.language.dssl2"	,
+				"match": "\\b(?i)(let)\\b"
+				}
+			]
+		},
+		"constants": {
+			"patterns": [
+				{
+				"name": "constant.character",
+				"match": "(<|>|=|~)"
+				},
+				{
+				"name": "constant.language",
+				"match": "\\b(?i)(and|or|pass|if|elif|else)\\b"
+				},
+				{
+				"name": "constant.numeric",
+				"match": "(?x)\n  (?<![\\w\\.])(?:\n      [1-9](?: _?[0-9] )*\n      |\n      0+\n      |\n      [0-9](?: _?[0-9] )* ([jJ])\n      |\n      0 ([0-9]+)(?![eE\\.])\n  )\\b\n"
 				}
 			]
 		}
+
 	},
 	"scopeName": "source.rkt"
 }
