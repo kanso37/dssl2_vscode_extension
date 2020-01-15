@@ -1,4 +1,4 @@
-### HOW TO USE
+# HOW TO USE
 
 Simply clone this project into a folder called "dssl2_vscode_extension"
 and then put that folder in ~/.vscode/extensions
@@ -9,7 +9,7 @@ Or just open command palette and >Reload Window
 
 Note to self: See Racket/dssl2 setup doc for resources I used to make this extension.
 
-## Just keeping this here in case:
+# Just keeping this here in case:
 
 # dssl2-vscode-extension README
 
