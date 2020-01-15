@@ -7,7 +7,7 @@ Quit VS Code and reopen it. .rkt files should now have syntax highlighting!
 
 Or just open command palette and >Reload Window
 
-Note to self: See Racket/dssl2 setup doc for resources I used to make this extension.
+Note to self: See dssl2 setup doc for resources I used to make this extension.
 
 Just keeping the default text here in case:
 
