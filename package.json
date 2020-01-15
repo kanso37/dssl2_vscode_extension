@@ -1,33 +1,25 @@
 {
-  "name": "dssl2-vscode-extension",
-  "displayName": "dssl2_vscode_extension",
-  "description": "So that I don't have to suffer through using DrRacket...",
-  "version": "0.0.1",
-  "engines": {
-    "vscode": "^1.41.0"
-  },
-  "categories": [
-    "Programming Languages"
-  ],
-  "contributes": {
-    "languages": [
-      {
-        "id": "dssl2",
-        "aliases": [
-          "dssl2"
-        ],
-        "extensions": [
-          ".rkt"
-        ],
-        "configuration": "./language-configuration.json"
-      }
+    "name": "dssl2-vscode-extension",
+    "displayName": "dssl2_vscode_extension",
+    "description": "So that I don't have to use DrRacket...",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.41.0"
+    },
+    "categories": [
+        "Programming Languages"
     ],
-    "grammars": [
-      {
-        "language": "dssl2",
-        "scopeName": "source.rkt",
-        "path": "./syntaxes/dssl2.tmLanguage.json"
-      }
-    ]
-  }
+    "contributes": {
+        "languages": [{
+            "id": "dssl2",
+            "aliases": ["dssl2", "dssl2"],
+            "extensions": [".rkt"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "dssl2",
+            "scopeName": "source.rkt",
+            "path": "./syntaxes/dssl2.tmLanguage.json"
+        }]
+    }
 }
