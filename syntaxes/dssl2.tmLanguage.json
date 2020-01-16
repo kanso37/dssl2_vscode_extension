@@ -23,11 +23,11 @@
 			"patterns": [
 				{
 				"name": "keyword.control.dssl2",
-				"match": "\\b(?i)(def|class|assert|test|assert_error)\\b"
+				"match": "\\b(def|class|assert|test|assert_error|return|pass|struct|interface|assert_eq)\\b"
 				},
 				{
 				"name": "keyword.other.dssl2",
-				"match": "\\b(?i)(placeholder)\\b"
+				"match": "\\b(placeholder)\\b"
 				}
 			]
 			},
@@ -59,11 +59,11 @@
 			"patterns": [
 				{
 				"name": "constant.character",
-				"match": "(<|>|!=|=|==|-)"
+				"match": "(<|>|!=|=|==|-|%)"
 				},
 				{
 				"name": "constant.language",
-				"match": "\\b(?i)(orange)\\b"
+				"match": "\\b(orange)\\b"
 				},
 				{
 					"name": "constant.numericfloat",
@@ -79,11 +79,11 @@
 			"patterns": [
 				{
 				"name": "variable.language.dssl2"	,
-				"match": "\\b(?i)(let|and|or|pass|if|elif|else)\\b"
+				"match": "\\b(let|and|or|if|elif|else|not|for|in|is|False|True|None)\\b"
 				},
 				{
 				"name": "variable.userdefined.dssl2",
-				"match": "[^,.():;<>=!]"
+				"match": "[^,.():;<>=\\[\\]]"
 				}
 			]
 		}
