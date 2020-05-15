@@ -79,7 +79,7 @@
 			"patterns": [
 				{
 				"name": "variable.language.dssl2"	,
-				"match": "\\b(let|and|or|if|elif|else|not|for|in|is|False|True|None)\\b"
+				"match": "\\b(let|and|or|if|elif|else|not|for|in|is|False|True|None|while)\\b"
 				},
 				{
 				"name": "variable.userdefined.dssl2",
